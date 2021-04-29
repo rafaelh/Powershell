@@ -10,7 +10,7 @@ $POWERSHELL_TELEMETRY_OPTOUT = 1
 function env {Get-ChildItem Env:"$args"}
 function touch {New-Item "$args" -ItemType File}
 function ln ($target, $link) {New-Item -Path $link -ItemType SymbolicLink -Value $target}
-new-alias grep Select-String
+#new-alias grep Select-String
 
 
 # Quick change directories & programs
